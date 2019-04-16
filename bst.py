@@ -1,4 +1,4 @@
-class Node:
+class TreeNode:
     def __init__(self, val):
         self.right = None
         self.left = None
@@ -12,7 +12,7 @@ class Tree:
 
     def insert(self, val):
         if self.root == None:
-            self.root = Node(val)
+            self.root = TreeNode(val)
         else:
             self.insert_node(self.root, val)
 
@@ -40,16 +40,16 @@ class Tree:
 
     def insert_node(self,node, val):
         if node is None:
-            node = Node(val)
+            node = TreeNode(val)
         if node.val > val:
             if node.left is None:
-                node.left = Node(val)
+                node.left = TreeNode(val)
                 node.left.parent = node
             else:
                 self.insert_node(node.left, val)
         else:
             if node.right is None:
-                node.right = Node(val)
+                node.right = TreeNode(val)
                 node.right.parent = node
             else:
                 self.insert_node(node.right, val)
