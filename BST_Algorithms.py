@@ -32,6 +32,9 @@ class Solution:
             return 0
         return 1 + max(self.max_height(root.left), self.max_height(root.right))
 
+    def numTrees(self, n: int) -> int:
+        
+
 if __name__ == '__main__':
     sol = Solution()
     sol.range_sum_bst1_test()

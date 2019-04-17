@@ -20,6 +20,6 @@ def permutate_iterate(str):
 
 if __name__ == '__main__':
     str = 'abcd'
-#    permutate('',str)
-#    print(len(res))
-    permutate_iterate(str)
+    permutate('',str)
+    print(len(res))
+#permutate_iterate(str)
