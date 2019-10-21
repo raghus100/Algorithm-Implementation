@@ -3,6 +3,7 @@
 #include <stdlib.h>
 char * longestPalindrome(char * s)
 {
+    if(!s) return 0;
     int res[1000][1000] = {{0}};
     int len = strlen(s);
     int res_i = 0, res_j = 0;
@@ -47,7 +48,7 @@ char * longestPalindrome(char * s)
 int main()
 {
     char *res = NULL;
-    char *s = "cbbd";
+    char *s = NULL;
     printf("Longest palindrome: %s\n", longestPalindrome(s));
     return 0;
 }
